@@ -1,10 +1,25 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <!-- <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> -->
+    <Display/>
+    <Button/>
   </div>
   <router-view />
 </template>
+
+<script>
+import Button from './components/Button.vue'
+import Display from './components/Display'
+
+export default {
+  name: 'App',
+  components: {
+    Display,
+    Button
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
